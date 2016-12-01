@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include "SoftwareSerial.h"
+#include <SoftwareSerial.h>
 #include "A6lib.h"
 
 #ifdef DEBUG
@@ -25,7 +25,7 @@
 //
 
 A6lib::A6lib(int transmitPin, int receivePin) {
-    A6conn = new SoftwareSerial(receivePin, transmitPin, false, 1024);
+    A6conn = new SoftwareSerial(receivePin, transmitPin, false;
     A6conn->setTimeout(100);
 }
 
