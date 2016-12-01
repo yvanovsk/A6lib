@@ -25,7 +25,7 @@
 //
 
 A6lib::A6lib(int transmitPin, int receivePin) {
-    A6conn = new SoftwareSerial(receivePin, transmitPin, false;
+    A6conn = new SoftwareSerial(receivePin, transmitPin, false);
     A6conn->setTimeout(100);
 }
 
